@@ -1,0 +1,58 @@
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+	 crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="container">
+		<header class="header-container">
+			<h1 class="header">My Watchlist</h1>
+			<a href="index.html" class="watchlist-link" id="nav-btn">Search for movies</a>
+		</header>
+		<main class="main-content" id="main-content">
+				<div class="main-icon-container" id="main-icon-container-outer">
+					<div class="main-icon-container" id="icon-container-inner">
+						<p class="error-message">Your watchlist is looking a little empty...</p>
+						<a class="watchlist-add-btn" href="index.html">
+							<i class="fa-solid fa-circle-plus"></i>
+							<span>Let's add some movies!</span>
+						</a>
+					</div>
+				</div>
+				<section id="film-container">
+					<!-- <article class="film">
+					<img src="images/film-test-img.png" class="film-img">
+					<div class="film-info">
+						<div class="film-header-info">
+							<h2>Blade Runner</h2>
+							<p>⭐8.1</p>
+						</div>
+						<div class="film-interaction">
+							<p>116min</p>
+							<p>Drama, Mystery, Sci-fi</p>
+							<button>
+                                <i class="fa-solid fa-circle-minus"></i>
+                                <span>Remove</span>
+                            </button>
+						</div>
+						<p class="film-description">
+							A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their
+							creator.
+						</p>
+					</div>
+				</article> -->
+				</section>
+			</main>
+	</div>
+
+	<script src="index.js" type="module"></script>
+	<script src="watchlist.js" type="module"></script>    
+</body>
+
+</html>
