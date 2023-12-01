@@ -1,0 +1,210 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, 
+body, 
+.search-btn,
+.watchlist-add-btn,
+.film-interaction>button {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+     background-color: #2e2e2f;
+}
+
+.container {
+    margin: 0 auto;
+    width: 34.375em;
+}
+
+.header-container {
+    background-image: linear-gradient( to right, rgba(0, 0, 0, 0.75), 
+    rgba(0, 0, 0, 0.75) ), 
+    url('./images/header_background2.jpg');
+    background-position: top 25% right 0;
+    background-size: cover;
+    width: 100%;
+    height: 13em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative; 
+}
+
+.header {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.search-section {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.search-bar,
+.search-btn {
+    padding: 0.6em;
+    border: none;
+}
+
+.search-bar {
+    width: 23em;
+    font-family: 'Inter', 'FontAwesome';
+    background-color: #2e2e2f;
+    color: #a5a5a5;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.search-btn {
+    width: 7.5em;
+    background-color: #4b4b4b;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content {
+    background-color: #121212;
+    height: 34em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.main-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    user-select: none;
+}
+
+.has-movies {
+    display: flex;
+    align-items: flex-start;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    text-align: center;
+    padding: 0 4em 0.5em 4em;
+    color: #787878;
+}
+
+.read-more {
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.read-more:hover,
+.read-more:active {
+    opacity: 0.6;
+}
+
+.main-icon {
+    width: 50%;
+}
+
+.main-icon-container p {
+    color: #2e2e2f;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.film-container {
+    margin-top: 4em;
+    padding: 0 2.25em 0 2.25em;
+}
+
+.film {
+    display: flex;
+    gap: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid grey;
+    margin-bottom: 2em;
+}
+
+.film-img {
+    width: 6.187em;
+    height: 9.187em;
+}
+
+.film-header-info {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.film-header-info>h2,
+.film-header-info>p,
+.film-interaction>p,
+.film-interaction>button {
+    color: #fff;
+}
+
+.film-interaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em
+}
+
+.film-interaction>button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.film-description {
+    color: #a5a5a5;
+}
+
+/* Watchlist */
+
+.watchlist-add-btn {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.watchlist-link {
+    transition: all 0.3s;
+}
+
+.watchlist-link:hover,
+.watchlist-link:active,
+.watchlist-add-btn:hover,
+.watchlist-add-btn:active {
+    opacity: 0.6;
+}
